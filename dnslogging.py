@@ -24,13 +24,11 @@ with open('dnslookup.csv', 'a') as csv_file:
 print("DNS Lookup for ", domain ," is: ", addr)
 print("Date and Time: ", nowstr)
 
-#do while loop to keep running
 
 
 while 1:
     newaddr = socket.gethostbyname(domain)
     time.sleep(1)
-#compare old and new IP
     if addr != newaddr:
         print("Address of ", domain ," is now:", newaddr)
         print("Date and Time: ", nowstr)
