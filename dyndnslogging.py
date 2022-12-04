@@ -29,7 +29,7 @@ print("Date and Time: ", nowstr)
 while 1:
     newaddr = socket.gethostbyname(domain)
     time.sleep(1)
-    if addr != 1:
+    if addr != newaddr:
         # Timestamp
         now = datetime.now()
         nowstr = now.strftime("%d/%m/%Y %H:%M:%S")
