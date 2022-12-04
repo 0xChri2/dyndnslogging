@@ -13,7 +13,7 @@ nowstr = now.strftime("%d/%m/%Y %H:%M:%S")
 
 
 #print in csv file
-with open('dnslookup.csv', 'a') as csv_file:
+with open('dyndnslogging.csv', 'a') as csv_file:
                 writer = csv.writer(csv_file)
                 writer.writerow([nowstr, addr])
 
@@ -35,7 +35,7 @@ while 1:
         nowstr = now.strftime("%d/%m/%Y %H:%M:%S")
         print("Address of ", domain ," is now:", newaddr)
         print("Date and Time: ", nowstr)
-        with open('dnslookup.csv', 'a') as csv_file:
+        with open('dyndnslogging.csv', 'a') as csv_file:
             writer = csv.writer(csv_file)
             writer.writerow([nowstr, addr])
         addr = newaddr
