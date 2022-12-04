@@ -29,7 +29,10 @@ print("Date and Time: ", nowstr)
 while 1:
     newaddr = socket.gethostbyname(domain)
     time.sleep(1)
-    if addr != newaddr:
+    if addr != 1:
+        # Timestamp
+        now = datetime.now()
+        nowstr = now.strftime("%d/%m/%Y %H:%M:%S")
         print("Address of ", domain ," is now:", newaddr)
         print("Date and Time: ", nowstr)
         with open('dnslookup.csv', 'a') as csv_file:
