@@ -1,4 +1,4 @@
-# dyndnslogging
+# DynDNSlogging
 
 This script, called dyndnslogging, performs a DNS lookup on the specified domain and logs the IP address and date and time to a CSV file. The script then enters an infinite loop, in which it continuously performs DNS lookups and checks if the IP address has changed. If the IP address has changed, the new IP address and date and time are logged to the CSV file.
 ## Requirements
